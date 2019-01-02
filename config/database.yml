@@ -14,3 +14,15 @@ development:
   username: root
   password: visvamj1
   host: localhost
+
+
+test:
+  <<: *default
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: sample_test
+  pool: 5
+  username: root
+  password: visvamj1
+  host: localhost
